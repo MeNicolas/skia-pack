@@ -45,7 +45,7 @@ def main():
       # 'skia_enable_gpu=true',
       # 'skia_use_gl=true',
       'skia_use_metal=true',
-      'extra_cflags_cc=["-frtti -ENABLE_BITCODE=YES"]'
+      'extra_cflags_cc=["-frtti", "-fembed-bitcode"]'
     ]
     if 'ios' == target:
       args += ['target_os="ios"']
