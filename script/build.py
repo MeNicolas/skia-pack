@@ -49,7 +49,7 @@ def main():
       'extra_cflags_cc=["-frtti", "-fembed-bitcode"]'
     ]
     if 'ios' == target:
-      args += ['target_os="ios"', 'extra_cflags=["-DSKIA_C_DLL", "-DHAVE_ARC4RANDOM_BUF", "-target", "arm64-apple-ios", "-fembed-bitcode"]']
+      args += ['target_os="ios"', 'extra_cflags=["-fembed-bitcode"]']
     else:
       if 'arm64' == machine:
         args += ['extra_cflags=["-stdlib=libc++"]']
