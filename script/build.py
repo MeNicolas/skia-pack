@@ -47,10 +47,9 @@ def main():
       'skia_use_metal=true',
       'extra_cflags_cc=["-frtti", "-fembed-bitcode"]',
       'extra_cflags_c=["-fembed-bitcode"]',
-      'extra_cflags=["-fembed-bitcode"]'
     ]
     if 'ios' == target:
-      args += ['target_os="ios"']
+      args += ['target_os="ios"', 'extra_cflags=["-fembed-bitcode"]']
     else:
       if 'arm64' == machine:
         args += ['extra_cflags=["-stdlib=libc++"]']
