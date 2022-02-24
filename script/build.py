@@ -45,11 +45,12 @@ def main():
       # 'skia_enable_gpu=true',
       # 'skia_use_gl=true',
       'skia_use_metal=true',
-      'skia_use_bitcode=true',
-      'extra_cflags_cc=["-frtti", "-fembed-bitcode"]'
+      'extra_cflags_cc=["-frtti", "-fembed-bitcode"]',
+      'extra_cflags_c=["-fembed-bitcode"]',
+      'extra_cflags=["-fembed-bitcode"]'
     ]
     if 'ios' == target:
-      args += ['target_os="ios"', 'extra_cflags=["-fembed-bitcode"]']
+      args += ['target_os="ios"']
     else:
       if 'arm64' == machine:
         args += ['extra_cflags=["-stdlib=libc++"]']
