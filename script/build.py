@@ -45,6 +45,7 @@ def main():
       # 'skia_enable_gpu=true',
       # 'skia_use_gl=true',
       'skia_use_metal=true',
+      'skia_use_bitcode=true',
       'extra_cflags_cc=["-frtti", "-fembed-bitcode"]',
       'extra_cflags_c=["-fembed-bitcode"]',
     ]
