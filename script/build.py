@@ -25,7 +25,7 @@ def main():
     'skia_use_system_expat=false',
     'skia_use_system_libjpeg_turbo=false',
     'skia_use_system_libpng=false',
-    'skia_use_system_libwebp=false',
+    'skia_use_system_libwebp=true',
     'skia_use_system_zlib=false',
     'skia_use_sfntly=false',
     'skia_use_freetype=true',
@@ -34,7 +34,7 @@ def main():
     'skia_use_system_harfbuzz=false',
     'skia_pdf_subset_harfbuzz=true',
     # 'skia_use_icu=true',
-    'skia_use_system_icu=false',
+    'skia_use_system_icu=true',
     # 'skia_enable_skshaper=true',
     # 'skia_enable_svg=true',
     'skia_enable_skottie=true'
